@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+     background-color: white;
+     max-width: 100%;
+     height:100px;  
+  
+}
+
+.navbar-brand img{
+  width: 300px;;
+  font-size: 35px;
+  padding: 20px;
+}
+#navbarText {
+   display: flex;
+    justify-content:space-around;
+    padding: 5%;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+}
+.hamburger{
+    display: none;
+
+}
+
+a:hover{
+background-color: gray;
+border-radius: 10%;
+}
+
+.navbar-icons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 30px;
+    padding-inline: 20px;
+    cursor: pointer;
+}
+
+
+/*ESTILOS VENTANA POPUP */
+
+.ventana-popup{
+    position: relative;
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 30%;
+    background-color: #f2ede4 ;
+    width: 500px;
+    height: 200px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+
+    
+}
+.popup{
+    padding: 5%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-close{
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    right: 2px;
+}
+.email{
+width: 300px;
+height: 30px;
+font-size: 25px;
+    
+}
+.suscribete{
+    border-radius: 5px;
+    width: 110px;
+    height: 35px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #121212;
+    color: #f2ede4;
+
+}
+
+/*ESTILOS PARA EL CARRUSEL*/
+
+
+
+.carrouselcontainer{
+
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+}
+.carrousel-imagenes{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  
+
+
+}
+.carrousel-img {
+position:relative;
+flex-shrink: 0;
+display:none;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+
+}
+.carrousel-img.active {
+
+    display: flex;
+}
+
+.carrousel-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrousel-img p{
+   position: absolute;
+    top: 10%;
+    left: 5%;
+    color: #f2ede4;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    width: 350px;
+    z-index: 2;
+}
+
+.btn-carusel{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    padding: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10px;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn-carusel i{
+    
+font-size: 1px;
+justify-content: center;
+
+}
+.btn-carusel:hover{
+    background-color:rgba (0, 0, 0, 0.7);
+}
+.carrusel-buttonantes{
+left: 10px;
+}
+.carrusel-buttondsp{
+    right: 10px;
+}
+.carrusel-buttonantes::before{
+    font-size: 2rem;
+    content: '\2190';
+}
+.carrusel-buttondsp::before{
+    content: '\2192';
+    font-size: 2rem;
+}
+
+ .container{
+
+    position: relative
+ }
+
+/*ESTILOS PARA EL PARRAFO ADICIONAL "LEER MAS"*/
+.parrafo{
+    max-width: 100%;
+    height: auto;
+    font-size: 19px;
+    justify-content: center;
+    text-align:justify;
+    padding-top:5%;
+    
+}
+.mas-texto{
+    display: none;
+    width: 100%;
+    text-align:justify;
+    align-items: center;
+    
+
+
+}
+
+
+.boton-leer-mas{
+   position: relative;
+   left: 50%;
+    top: -55px;
+    text-decoration: none;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: blue;
+
+}
+
+.futuro {
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    text-align: center;
+
+}
+.ofrecemos{
+    text-align:center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.mi-card{
+   
+    justify-content: center;
+    text-align:center;
+    border: none;
+    max-width: 100%;
+    height:auto;
+}
+.card-text{
+    font-weight: medium;
+}
+.card-title{
+    font-weight: bold;
+}
+
+
+.subtitulo-inferior{
+   
+    color:black;
+    justify-content: center;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size:50px;
+    padding: 5%;
+
+}
+.parrafo-inferior{
+    width:300PX;
+    margin-left: 420px;
+    margin-top:-35px;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+
+}
+.form-caja{
+    background-color: #f2ede4;
+    height: 500px;
+    
+    
+}
+.form-control{
+    width: 100%;
+    height: 900px;
+    margin-left: 250px;
+    border: 1px solid white;
+    border-radius:10px;
+    color: black;
+    background-color: transparent;
+}
+.btn-dark{
+    width: 150px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 480px;
+}
+
+#piepagina{
+    background-color: #121212;
+    padding: 10px;
+    color:black;
+
+}
+#navbarText-2{  
+    color: white;
+}
+
+.nav-bar-botton{
+    color: white;
+}
+
+
+.footer{
+background-color: burlywood;
+
+}
+
+.MENUFOOTER{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 15px;
+    margin-right: 20px;
+}
+.navbar-brand2{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/*ESTILO PARA PANTALLA MEDIANA*/
+
+@media (min-width:600px) and (max-width:1023px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        max-width: 100%;
+        height:100px; 
+        position: relative;
+         }
+        
+        
+         .nav-item {
+                    display:none;
+                }
+        .hamburger{
+            display: block;
+            font-size: 20px;
+            cursor: pointer;
+            position: absolute;
+            top:-70px;
+            right: 20px;
+            justify-content:space-between ;
+            gap: 5px;
+        }
+               
+                
+        .navbar-brand img{
+           width: 200px;
+          font-size: 35px;
+          
+        }
+        
+        .navbar-icons{
+            gap: 20px;
+            display: flex;
+            align-items: cente;
+            justify-content: space-around;
+            position:absolute;
+            top: -100px;
+            right: 150px;
+            height: 100px;
+            width: 30px;
+            font-size: medium;
+        }
+        
+           
+        .contenedor-h1 img{
+            display: flex;
+            width: 100%;  
+        }
+        
+        h1{
+            display: flex;
+            margin-top: 100px;
+            padding: 10px ;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            text-align:left;
+            font-size: 40px;  
+                
+        }
+        
+        #boton-header{
+        
+        flex-direction: column;
+        width: 150px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-size: 12px;
+        position: absolute;
+        top: 400px;
+        left:0px;      
+}
+.sobresarah{
+
+    max-width: 85%;  
+}
+.vermas{
+    margin-top: 5px;
+}
+.futuro {
+    margin-top: 40px;
+    font-size: 30px;
+}
+.mi-card{
+   
+    justify-content: center;
+    align-content: center;
+    text-align:center;
+    border: none;
+    width: 100%;
+    height: 400px;
+    margin-left: 80px;
+   
+}
+
+#piepagina{
+   color:white;
+
+}
+.subtitulo-inferior{
+font-size: 50px;
+color: black;
+
+}
+.parrafo-inferior{
+color: black;
+margin-left: 100px;
+
+}
+.form-control{
+    width: 5%;
+    height:2px;
+    align-content:center;
+    justify-items:center;
+    align-items:center;
+    margin-left:0px;
+   
+}
+.btn-dark{
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15px;
+
+}
+#icono1{
+    color: white;
+}
+.icono{
+    display: none;
+}
+
+}
+
+@media (min-width:350px) and (max-width:599px){
+    .nav-item {
+        display:none;
+    } 
+    .hamburger{
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        position: absolute;
+        top:-65px;
+        right: 20px;
+        justify-content:space-between ;
+        gap: 5px;
+    }
+
+    .navbar-brand img{
+        width: 160px;
+       font-size: 35px;
+       
+     }
+     .navbar-icons{
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position:absolute;
+        top: -100px;
+        right: 150px;
+        height: 100px;
+        width: 30px;
+        font-size: medium;
+    }
+    header{
+        display: flex;
+         background-size:cover;
+         background-position: center;
+       
+    }
+    h1{
+    display: flex;
+    position:relative;
+    left: 30px;
+    top: 200px;
+    padding:3%;
+    height: 32px;
+    justify-content:center;
+    text-align:center;
+    color: white;
+    font-size: 30px;    
+}
+#boton-header{
+    display: flex;
+    position: absolute;
+    margin-left: 400px;
+    padding:10px 200px;
+    font-size: 15px;
+    text-align:center;
+    align-items: center;
+    justify-content: center; 
+ }
+ .sobresarah{
+    max-width: 100%;
+    height:auto;
+    margin-top: 5%;
+    font-size: 17px;
+    justify-content: center;
+    text-align:center; 
+}
+.vermas{
+    margin-top: 5px;
+   
+}
+.futuro {
+   
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+.vermas{
+    display: none;
+}
+.form-control{
+ display: none;
+}
+.parrafo-inferior{
+   display: none;
+    }
+.icono{
+    display: flex;
+    flex-direction:column;
+   padding: 5%;
+    font-size:40px;
+    text-align: center;
+}
+.btn-dark{
+    display: none;
+
+}
+
+}
+    
+
+
+
+
+
+    
+
